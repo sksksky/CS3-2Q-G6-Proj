@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-	    background-image: url('background.JPG'); 
+	    background-image: url('bg.JPG'); 
             background-size: cover;        
             background-position: center;   
             background-repeat: no-repeat;
@@ -29,7 +29,7 @@
         
         img.logo {
             height: 160px;
-            margin-right: 20px;
+            margin-right: 0px;
         }
         
         .header-text {
@@ -71,6 +71,14 @@
         nav ul li a:hover {
             color: #0073e6;
         }
+		
+		.container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 800px;
+			margin: 20px auto
+		}
 
         .article-section {
             padding: 20px;
@@ -80,7 +88,21 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
-        
+		
+		.side-image{
+			width: 20%;
+			height: 90vh;
+			object-fit: fill;
+		}
+		
+		.left-image{
+			margin-right: 10px;
+		}
+		
+		.right-image{
+			margin-left: 10px;
+		}
+		
         .article-section h2,
         .article-section h3,
         .article-section h4 {
@@ -94,12 +116,20 @@
             line-height: 1.6;
             color: #333;
         }
+		
+		footer{
+			text-align: center;
+			padding: 10px;
+			background-color: #c4b58b;
+			font-size: 0.9em;
+			color: #333;
+		}
     </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="logo.PNG" alt="Logo" class="logo">
+            <img src="logo.PNG" class="logo">
             <div class="header-text">
                 <h1>Inspiring Thoughts, Building Tomorrow</h1>
                 <h3>The Philippine Education System</h3>
@@ -114,23 +144,29 @@
             </ul>
         </nav>
     </header>
+	
+	<div class="container">
+		<img src="leftside.png" class="side-image left-image">
+	
+		<section class="article-section">
+			<h2>Understanding Educational Inequality</h2>
+			<p>Educational inequality refers to the unequal distribution of academic resources and opportunities among students from different socioeconomic, racial, and geographic backgrounds. It affects access to quality education, creating significant disparities in learning outcomes.</p>
+		</section>
     
-    <section class="article-section">
-        <h2>Understanding Educational Inequality</h2>
-        <p>Educational inequality refers to the unequal distribution of academic resources and opportunities among students from different socioeconomic, racial, and geographic backgrounds. It affects access to quality education, creating significant disparities in learning outcomes.</p>
-    </section>
+		<section class="article-section">
+			<h3>Causes of Educational Inequality</h3>
+			<p>Several factors contribute to educational inequality, including socioeconomic status, geographical location, and systemic bias. These factors result in disparities that affect students’ academic success and future opportunities.</p>
+		</section>
     
-    <section class="article-section">
-        <h3>Causes of Educational Inequality</h3>
-        <p>Several factors contribute to educational inequality, including socioeconomic status, geographical location, and systemic bias. These factors result in disparities that affect students’ academic success and future opportunities.</p>
-    </section>
-    
-    <section class="article-section">
-        <h4>Addressing the Issue</h4>
-        <p>Efforts to reduce educational inequality include policy changes, targeted funding, and community-based initiatives. Addressing these disparities is essential for creating a more equitable society where every student has the opportunity to succeed.</p>
-    </section>
+		<section class="article-section">
+			<h4>Addressing the Issue</h4>
+			<p>Efforts to reduce educational inequality include policy changes, targeted funding, and community-based initiatives. Addressing these disparities is essential for creating a more equitable society where every student has the opportunity to succeed.</p>
+		</section>
+		
+		<img src="rightside.png" class="side-image right-image">
+	</div>
+	
 	<footer>
 		<p> Copyright &copy; Group 6 9-Potassium. All rights reserved. </p> 
 	</footer>
 </body>
-</html>
