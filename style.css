@@ -1,4 +1,4 @@
-        body {
+	body {
             font-family: Playfair Display, Poppins;
             margin: 0;
             padding: 0;
@@ -11,6 +11,10 @@
             padding: 0.5rem;
             text-align: center;
         }
+		header h2 {
+			margin: 0;
+			padding: 0;
+		}
         nav {
             background-color: #105a8b;
             color: white;
@@ -50,6 +54,7 @@
             color: white;
             padding: 1rem 0;
             text-align: center;
+			margin: 0;
         }
         .hero h1 {
             font-size: 2rem;
@@ -58,6 +63,11 @@
         .hero p {
             font-size: 1rem;
         }
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
         .content {
             padding: 2rem 1rem;
             max-width: 1000px;
@@ -270,3 +280,4 @@
             text-align: center;
             padding: 1rem;
 		}
+
