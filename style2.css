@@ -105,6 +105,9 @@
 		}
 		.edu-inequality h1 {
             color: #105a8b;
+		}
+		.edu-inequality h4 {
+            color: #105a8b;
 			margin-bottom: 20px;
 		}
 		.edu-inequality p {
@@ -120,6 +123,9 @@
 		}
 		.resources h1 {
             color: #105a8b;
+		}
+		.resources h4 {
+            color: #105a8b;
 			margin-bottom: 20px;
 		}
 		.resources p {
@@ -134,6 +140,9 @@
             margin-bottom: 2rem;
 		}
 		.salaries h1 {
+            color: #105a8b;
+		}
+		.salaries h4 {
             color: #105a8b;
 			margin-bottom: 20px;
 		}
